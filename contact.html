@@ -62,6 +62,61 @@
 			</h1>
 		</header>
 
+		<main class="contact">
+			<form
+				class="contact__form"
+				action="https://formspree.io/f/meqvdvgl"
+				method="POST"
+			>
+				<div class="contact__group">
+					<label class="contact__label" for="name"
+						>Full Name: <span class="contact__asterick">*</span></label
+					>
+					<input
+						type="text"
+						name="name"
+						class="contact__input"
+						id="name"
+						placeholder="Your name..."
+						required
+					/>
+				</div>
+				<div class="contact__group">
+					<label class="contact__label" for="email"
+						>Email Address: <span class="contact__asterick">*</span></label
+					>
+					<input
+						type="email"
+						name="email"
+						class="contact__input"
+						id="email"
+						placeholder="Your email..."
+						required
+					/>
+				</div>
+				<div class="contact__group">
+					<label class="contact__label" for="message"
+						>Message: <span class="contact__asterick">*</span></label
+					>
+					<textarea
+						name="message"
+						class="contact__input contact__input--lg"
+						id="message"
+						cols="30"
+						rows="10"
+						placeholder="Your message..."
+						required
+					></textarea>
+				</div>
+				<input
+					class="contact__submit-btn contact__text-piece"
+					type="submit"
+					value="Send Message!"
+					role="button"
+				/>
+			</form>
+		</main>
+
 		<footer class="footer">
 			<section class="footer__content">
 				<h2 class="footer__copyright">Christian Nguyen</h2>

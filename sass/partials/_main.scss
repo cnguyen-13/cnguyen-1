@@ -56,15 +56,15 @@
 		display: block;
 		max-width: 250px;
 		border: 1px solid $color__primary;
-		font-style: italic;
 		text-decoration: none;
 		border-radius: 5px;
 		padding: 0.75rem;
-		transition: background-color 300ms, color 300ms;
+		transition: background-color 300ms;
+		color: $color__white;
+		background-color: $color__primary;
 
 		&:hover {
-			color: $color__white;
-			background-color: $color__primary;
+			background-color: darken($color__primary, 10%);
 		}
 	}
 }
