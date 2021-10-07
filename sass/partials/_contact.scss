@@ -7,7 +7,7 @@
 	&__form {
 		border: 0.25rem solid $color__black;
 		border-radius: 5px;
-		padding: 5rem 2rem;
+		padding: 5rem 1rem;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -21,21 +21,25 @@
 
 	&__label {
 		width: 100%;
-
 		margin-bottom: 0.5rem;
 	}
 
 	&__asterick {
-		color: red;
+		color: $color__red;
 	}
 
 	&__input {
 		width: 100%;
 		border-radius: 5px;
 		border: 1px solid $color__black;
-
 		height: 3rem;
 		padding: 1rem;
+		transition: all 300ms;
+
+		&:focus {
+			background-color: #fefefe;
+			outline-color: $color__primary;
+		}
 
 		&--lg {
 			height: 10rem;
@@ -63,6 +67,22 @@
 	.contact {
 		&__submit-btn {
 			align-self: center;
+		}
+	}
+}
+
+@media (min-width: 450px) {
+	.contact {
+		&__form {
+			padding: 5rem 2rem;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.contact {
+		&__form {
+			padding: 5rem 3rem;
 		}
 	}
 }
