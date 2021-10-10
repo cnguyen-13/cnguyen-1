@@ -16,7 +16,11 @@
 			href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
 			rel="stylesheet"
 		/>
+
 		<link rel="stylesheet" href="./styles/styles.min.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+		<script src="./javascript/animation.js" defer></script>
 		<script src="./javascript/nav.js" defer></script>
 		<title>C.Nguyen | Portfolio</title>
 	</head>
@@ -86,8 +90,8 @@
 
 		<main class="main">
 			<section class="main__section">
-				<h2 class="main__subtitle">Summary</h2>
-				<p class="main__paragraph">
+				<h2 class="main__subtitle" data-aos="fade-right">Summary</h2>
+				<p class="main__paragraph" data-aos="fade-right">
 					A frontend developer with experience and knowledge in research and
 					computer hardware to create solutions based on specifications and
 					requirements through planning, designing, developing, and testing.
@@ -97,69 +101,88 @@
 				</p>
 			</section>
 
-			<div class="main__divider"></div>
+			<div class="main__divider" data-aos="fade-right"></div>
 
 			<section class="main__section">
-				<h2 class="main__subtitle">Skills</h2>
-				<p class="main__paragraph">
+				<h2 class="main__subtitle" data-aos="fade-right">Skills</h2>
+				<p class="main__paragraph" data-aos="fade-right">
 					A collection of front end technologies skills I have learned and are
 					continiously learning today. I would like to improve upon these skills
 					and acquire new ones.
 				</p>
 
 				<div class="main__labels">
-					<div class="main__label">HTML</div>
-					<div class="main__label">CSS</div>
-					<div class="main__label">JavaScript</div>
-					<div class="main__label">TypeScript</div>
-					<div class="main__label">ReactJS</div>
-					<div class="main__label">SASS / SCSS</div>
-					<div class="main__label">Bootstrap</div>
-					<div class="main__label">Figma</div>
-					<div class="main__label">Git</div>
+					<div class="main__label" data-aos="fade-right">HTML</div>
+					<div class="main__label" data-aos="fade-right">CSS</div>
+					<div class="main__label" data-aos="fade-right">JavaScript</div>
+					<div class="main__label" data-aos="fade-right">TypeScript</div>
+					<div class="main__label" data-aos="fade-right">ReactJS</div>
+					<div class="main__label" data-aos="fade-right">SASS / SCSS</div>
+					<div class="main__label" data-aos="fade-right">Bootstrap</div>
+					<div class="main__label" data-aos="fade-right">Figma</div>
+					<div class="main__label" data-aos="fade-right">Git</div>
 				</div>
 				<div class="main__logos">
 					<img
+						data-aos="fade-right"
 						src="./images/tech/html.svg"
 						alt="HTML logo"
 						class="main__logo"
 					/>
-					<img src="./images/tech/css.svg" alt="CSS logo" class="main__logo" />
 					<img
+						data-aos="fade-right"
+						src="./images/tech/css.svg"
+						alt="CSS logo"
+						class="main__logo"
+					/>
+					<img
+						data-aos="fade-right"
 						src="./images/tech/js.svg"
 						alt="JavaScript logo"
 						class="main__logo"
 					/>
 					<img
+						data-aos="fade-right"
 						src="./images/tech/ts.svg"
 						alt="TypeScript logo"
 						class="main__logo"
 					/>
 					<img
+						data-aos="fade-right"
 						src="./images/tech/react.svg"
 						alt="ReactJS logo"
 						class="main__logo"
 					/>
 					<img
+						data-aos="fade-right"
 						src="./images/tech/sass.svg"
 						alt="SASS logo"
 						class="main__logo"
 					/>
 					<img
+						data-aos="fade-right"
 						src="./images/tech/bootstrap.svg"
 						alt="Bootstrap logo"
 						class="main__logo"
 					/>
 					<img
+						data-aos="fade-right"
 						src="./images/tech/figma.svg"
 						alt="Figma logo"
 						class="main__logo"
 					/>
-					<img src="./images/tech/git.svg" alt="Git logo" class="main__logo" />
+					<img
+						data-aos="fade-right"
+						src="./images/tech/git.svg"
+						alt="Git logo"
+						class="main__logo"
+					/>
 				</div>
 			</section>
-			<div class="main__divider"></div>
-			<a class="main__next" href="./projects.html">Next Section: Projects</a>
+			<div class="main__divider" data-aos="fade-right"></div>
+			<a data-aos="fade-right" class="main__next" href="./projects.html"
+				>Next Section: Projects</a
+			>
 		</main>
 
 		<footer class="footer">
