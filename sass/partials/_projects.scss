@@ -3,7 +3,7 @@
 	padding-bottom: 0rem;
 	margin: 0 auto;
 	margin-top: 4rem;
-	max-width: 900px;
+	max-width: $width__max--main;
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 4rem;
@@ -55,7 +55,7 @@
 		text-decoration: none;
 		opacity: 0;
 		border: 1px solid $color__primary;
-		border-radius: 5px;
+		border-radius: $border__radius--btns;
 		padding: 0.25rem 2.5rem;
 		display: flex;
 		justify-content: center;
@@ -106,7 +106,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $vp__tablet) {
 	.projects {
 		text-align: left;
 		grid-template-columns: 1fr 1fr;

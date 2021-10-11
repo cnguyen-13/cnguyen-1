@@ -1,12 +1,12 @@
 .contact {
-	max-width: 900px;
+	max-width: $width__max--main;
 	margin: 0 auto;
 	margin-bottom: 3rem;
 	padding: 1rem;
 
 	&__form {
 		border: 0.25rem solid $color__black;
-		border-radius: 5px;
+		border-radius: $border__radius--btns;
 		padding: 5rem 1rem;
 		width: 100%;
 		display: flex;
@@ -30,7 +30,7 @@
 
 	&__input {
 		width: 100%;
-		border-radius: 5px;
+		border-radius: $border__radius--btns;
 		border: 1px solid $color__black;
 		height: 3rem;
 		padding: 1rem;
@@ -53,7 +53,7 @@
 		color: $color__white;
 		background-color: $color__primary;
 		padding: 0.75rem 1.25rem;
-		border-radius: 5px;
+		border-radius: $border__radius--btns;
 		font-size: 1.25rem;
 		transition: background-color 300ms;
 
@@ -63,7 +63,7 @@
 	}
 }
 
-@media (min-width: 350px) {
+@media (min-width: $vp__mobile-sm) {
 	.contact {
 		&__submit-btn {
 			align-self: center;
@@ -71,7 +71,7 @@
 	}
 }
 
-@media (min-width: 450px) {
+@media (min-width: $vp__mobile--mid) {
 	.contact {
 		&__form {
 			padding: 5rem 2rem;
@@ -79,7 +79,7 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $vp__tablet) {
 	.contact {
 		&__form {
 			padding: 5rem 3rem;
